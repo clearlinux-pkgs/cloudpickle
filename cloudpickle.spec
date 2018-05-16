@@ -4,7 +4,7 @@
 #
 Name     : cloudpickle
 Version  : 0.5.2
-Release  : 3
+Release  : 4
 URL      : https://pypi.python.org/packages/4d/f5/ee2cb38a72085a1a775812a7d000125aa3096555cafb97d137960d46b7af/cloudpickle-0.5.2.tar.gz
 Source0  : https://pypi.python.org/packages/4d/f5/ee2cb38a72085a1a775812a7d000125aa3096555cafb97d137960d46b7af/cloudpickle-0.5.2.tar.gz
 Summary  : Extended pickling support for Python objects
