@@ -4,7 +4,7 @@
 #
 Name     : cloudpickle
 Version  : 0.5.3
-Release  : 10
+Release  : 11
 URL      : https://github.com/cloudpipe/cloudpickle/archive/v0.5.3.tar.gz
 Source0  : https://github.com/cloudpipe/cloudpickle/archive/v0.5.3.tar.gz
 Summary  : No detailed summary available
