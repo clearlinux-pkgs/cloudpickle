@@ -4,7 +4,7 @@
 #
 Name     : cloudpickle
 Version  : 0.8.1
-Release  : 16
+Release  : 17
 URL      : https://github.com/cloudpipe/cloudpickle/archive/v0.8.1.tar.gz
 Source0  : https://github.com/cloudpipe/cloudpickle/archive/v0.8.1.tar.gz
 Summary  : No detailed summary available
