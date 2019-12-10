@@ -4,7 +4,7 @@
 #
 Name     : cloudpickle
 Version  : 1.2.2
-Release  : 26
+Release  : 27
 URL      : https://github.com/cloudpipe/cloudpickle/archive/v1.2.2/cloudpickle-1.2.2.tar.gz
 Source0  : https://github.com/cloudpipe/cloudpickle/archive/v1.2.2/cloudpickle-1.2.2.tar.gz
 Summary  : No detailed summary available
@@ -54,14 +54,14 @@ python3 components for the cloudpickle package.
 
 %prep
 %setup -q -n cloudpickle-1.2.2
+cd %{_builddir}/cloudpickle-1.2.2
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1568212196
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1576009310
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -77,12 +77,12 @@ python3 setup.py build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-PYTHONPATH=%{buildroot}/usr/lib/python3.7/site-packages python3 setup.py test || :
+PYTHONPATH=%{buildroot}$(python -c "import sys; print(sys.path[-1])") python setup.py test || :
 %install
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/cloudpickle
-cp LICENSE %{buildroot}/usr/share/package-licenses/cloudpickle/LICENSE
+cp %{_builddir}/cloudpickle-1.2.2/LICENSE %{buildroot}/usr/share/package-licenses/cloudpickle/1714ccb2a2ccbaa4fdd69680f0406848451a7f41
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -93,7 +93,7 @@ echo ----[ mark ]----
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/cloudpickle/LICENSE
+/usr/share/package-licenses/cloudpickle/1714ccb2a2ccbaa4fdd69680f0406848451a7f41
 
 %files python
 %defattr(-,root,root,-)

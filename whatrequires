@@ -2,4 +2,5 @@
 conda
 dask
 distributed
+horovod
 mvn-arrow
