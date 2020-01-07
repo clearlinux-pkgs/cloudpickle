@@ -4,7 +4,7 @@
 #
 Name     : cloudpickle
 Version  : 1.2.2
-Release  : 27
+Release  : 28
 URL      : https://github.com/cloudpipe/cloudpickle/archive/v1.2.2/cloudpickle-1.2.2.tar.gz
 Source0  : https://github.com/cloudpipe/cloudpickle/archive/v1.2.2/cloudpickle-1.2.2.tar.gz
 Summary  : No detailed summary available
