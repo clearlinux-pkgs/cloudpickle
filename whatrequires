@@ -4,3 +4,4 @@ dask
 distributed
 horovod
 mvn-arrow
+spyder-ide
