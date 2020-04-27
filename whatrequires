@@ -3,5 +3,6 @@ conda
 dask
 distributed
 horovod
-mvn-arrow
+scikit-image
 spyder-ide
+spyder-kernels
