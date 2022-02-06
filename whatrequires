@@ -1,8 +1,1 @@
 # This file contains recursive sources that require this package
-conda
-dask
-distributed
-horovod
-scikit-image
-spyder-ide
-spyder-kernels

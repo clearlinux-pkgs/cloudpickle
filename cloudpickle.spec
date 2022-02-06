@@ -4,7 +4,7 @@
 #
 Name     : cloudpickle
 Version  : 2.0.0
-Release  : 50
+Release  : 51
 URL      : https://github.com/cloudpipe/cloudpickle/archive/v2.0.0/cloudpickle-2.0.0.tar.gz
 Source0  : https://github.com/cloudpipe/cloudpickle/archive/v2.0.0/cloudpickle-2.0.0.tar.gz
 Summary  : Extended pickling support for Python objects
@@ -14,11 +14,11 @@ Requires: cloudpickle-license = %{version}-%{release}
 Requires: cloudpickle-python = %{version}-%{release}
 Requires: cloudpickle-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-BuildRequires : pluggy
-BuildRequires : py-python
-BuildRequires : pytest
-BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi(py)
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 
 %description
 # cloudpickle
@@ -61,7 +61,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1635711662
+export SOURCE_DATE_EPOCH=1644186007
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
