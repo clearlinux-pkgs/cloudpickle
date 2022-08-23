@@ -4,7 +4,7 @@
 #
 Name     : cloudpickle
 Version  : 2.1.0
-Release  : 55
+Release  : 56
 URL      : https://github.com/cloudpipe/cloudpickle/archive/2.1.0/cloudpickle-2.1.0.tar.gz
 Source0  : https://github.com/cloudpipe/cloudpickle/archive/2.1.0/cloudpickle-2.1.0.tar.gz
 Summary  : Extended pickling support for Python objects
