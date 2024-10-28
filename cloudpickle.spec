@@ -7,7 +7,7 @@
 #
 Name     : cloudpickle
 Version  : 3.1.0
-Release  : 62
+Release  : 63
 URL      : https://github.com/cloudpipe/cloudpickle/archive/v3.1.0/cloudpickle-3.1.0.tar.gz
 Source0  : https://github.com/cloudpipe/cloudpickle/archive/v3.1.0/cloudpickle-3.1.0.tar.gz
 Summary  : Pickler class to extend the standard pickle.Pickler functionality
